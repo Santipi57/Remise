@@ -75,23 +75,23 @@
             <div class="form signup">
                 <span class="title">Registro</span>
 
-                <form action="#">
+                <form action="php/registro_usuario_be.php" method="post">
                     <div class="input-field">
-                        <input type="text" placeholder="Introduce tu nombre" required>
+                        <input type="text" placeholder="Introduce tu nombre" name="nombre_completo" required>
                         <i class="uil uil-user"></i>
                     </div>
                     <div class="input-field">
-                        <input type="text" placeholder="Introduce tu email" required>
+                        <input type="text" placeholder="Introduce tu email" name="email" required>
                         <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="password" placeholder="Crea una contraseña" required>
-                        <i class="uil uil-lock icon"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" class="password" placeholder="Cofirma tu contraseña" required>
+                        <input type="password" class="password" placeholder="Crea una contraseña" name="contraseña" required>
                         <i class="uil uil-lock icon"></i>
                         <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="phone" class="Telefono" placeholder="Telefono" name="telefono" required>
+                        <i class="uil uil-phone"></i>
                     </div>
 
                     <div class="checkbox-text">
@@ -102,7 +102,7 @@
                     </div>
 
                     <div class="input-field button">
-                        <input type="button" value="Registrarse">
+                        <input type="submit" value="Registrarse">
                     </div>
                 </form>
 
