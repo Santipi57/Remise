@@ -1,0 +1,124 @@
+ 
+
+<!DOCTYPE html>
+<!-- === Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="css/login.css">
+         
+    <!--<title>Login & Registration Form</title>-->
+</head>
+<body>
+
+    <div class="menu">
+        <i class="fas fa-bars" id="btn_menu"></i>
+        <div id="back_menu"></div>
+        <nav id="nav">
+            <img src="media/WhatsApp_Image_2022-09-01_at_6.28.15_PM__1___1_-removebg-preview.png" alt="">
+            <ul>
+                <li><a href="index.html" id="selected">Inicio</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Inicio sesion</span>
+
+                <form action="php/login_usuario_be.php" method="post">
+                    <div class="input-field">
+                        <input type="text" placeholder="Introduce tu email" name="correo" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Introduce tu contraseña" name="contraseña" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Recordarme</label>
+                        </div>
+                        
+                        <a href="#" class="text">Has olvidado tu contraseña?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="submit" value="Iniciar">
+
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">No haz iniciado sesion?
+                        <a href="#" class="text signup-link">Registrate</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="form signup">
+                <span class="title">Registro</span>
+
+                <form action="php/registro_usuario_be.php" method="post">
+                    <div class="input-field">
+                        <input type="text" placeholder="Introduce tu nombre" name="nombre_completo" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Introduce tu email" name="correo" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Crea una contraseña" name="contraseña" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="phone" class="Telefono" placeholder="Telefono" name="telefono" required>
+                        <i class="uil uil-phone"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text">Acepto todos los terminos y condiciones</label>
+                        </div>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="submit" value="Registrarse">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Ya tienes  cuenta?
+                        <a href="#" class="text login-link">Inicia sesion</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<script src="scriptL.js"></script>-->
+    <script src="js/scriptL.js"></script>
+    <script src="js/scriptN.js"></script>
+</body>
+</html>
+

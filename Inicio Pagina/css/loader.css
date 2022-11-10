@@ -1,0 +1,83 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container{
+    display: flex;
+    background: #fff;
+    width: 420px;
+    padding: 50px 0;
+    border-radius: 8px;
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 500px;
+    top: 80px;
+    z-index: 100000;
+}
+
+
+.circular-progress{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: conic-gradient(#9EC5AB 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.progress-value{
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: #276e4b;
+}
+.text{
+    font-size: 30px;
+    font-weight: 500;
+    color: #C9B79C;
+}
+
+
+.loader{
+    background: #276e4b;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    transition-delay: 2s;
+}
+
+.loader2{
+    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%);
+}
+
+
+
+
+

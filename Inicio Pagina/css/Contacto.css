@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../media/Nubes.png);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+    height: 200px;
+}
+
+.container__header{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding: 40px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 180px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    list-style: none;
+    margin-left: 36px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color:black;
+    text-transform: uppercase;
+}
+
+#selected{
+    background: #2b794e;
+    padding: 10px 40px;
+    border-radius: 50px;
+    color: white;
+}
+
+.menu nav img{
+    display: none;
+}
+
+.menu #btn_menu{
+    display: none;
+}
+
+
+#icon_menu{
+    display: none;
+}
+
+.svg img{
+    width: 500px;
+    animation: move-vector 4s linear infinite;
+    position: absolute;
+    left: 250px;
+    top: 250px;
+}
+
+@keyframes move-vector {
+    0%{
+        transform: translateY(15px);
+    }50%{
+        transform: translateY(0px);
+    }100%{
+        transform: translateY(15px);
+    }
+}
+
+.form{
+    display: flex;
+    flex-flow: column;
+    background: #fff;
+    width: 30%;
+    height: 46%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 850px;
+    top: 320px;
+    border-radius: 20px;
+}
+
+.form__container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.form__title{
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: .4em;
+}
+
+.form__input{
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 0.2em;
+}
+
+.form__input--message{
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+}
+
+.form__cta{
+    font-family: inherit;
+    font-size: 1rem;
+    background: #2b794e;
+    color: #ffff;
+    border: none;
+    font-weight: 300;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.form__cta:hover{
+    background: rgb(37, 100, 71);
+    color: #000;
+}
+
+#selected{
+    background: #2b794e;
+    padding: 10px 40px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+ @media (max-width: 1232px){
+
+    .svg img{
+        display: none;
+    }
+
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        width: 40%;
+        left: 300px;
+        top: 320px;
+        border-radius: 20px;
+    }
+
+ }
+
+
+@media screen and (max-width: 974px){
+
+    .menu nav{
+        position: fixed;
+        top: 0;
+        right: -250px;
+        background: white;
+        width: 250px;
+        height: 100vh;
+        padding: 40px;
+        z-index: 1;
+        transition: all 300ms;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .menu ul li{
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .menu ul li a{
+        color: black;
+    }
+
+    #selected{
+        background: none;
+        padding: 0px;
+        border-radius: none;
+        color: rgb(37, 100, 71);
+    }
+
+    .menu nav img{
+        display: block;
+        width: 90px;
+    }
+
+    #back_menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.5);
+        display: none;
+    }
+
+    .menu #btn_menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.1);
+        font-size: 24px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 300ms;
+    }
+
+    .menu #btn_menu:hover{
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+
+    .form{
+        width: 57%;
+        left: 100px;
+        top: 320px;
+    }
+}
+
+
+
